@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>CSS Layout FlexBox Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css" type="text/css">
+
+    <script>
+        function hideCitiesName() {
+            var x = document.getElementsByClassName("city");
+            for (var i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+        }
+
+        function changeText() {
+            document.getElementById("firstTitle").innerHTML = "Surprise! London is the best!"
+        }
+
+        function changeLight(off_on) {
+            var pic;
+            if (off_on == 0)
+                pic = "https://www.w3schools.com/html/pic_bulboff.gif";
+            else
+                pic = "https://www.w3schools.com/html/pic_bulbon.gif";
+
+            document.getElementById("buldImage").src = pic;
+        }
+    </script>
+</head>
+
+<body>
+    <header>This is my first web page
+        <!-- <div id="toRight" href="#logout">LogOut</div> -->
+        <div class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn">LogOut</a>
+            <div class="dropdown-content">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+                <a href="#">Link 4</a>
+            </div>
+        </div>
+    </header>
+    <section>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#news">News</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#about">About</a>
+                </li>
+            </ul>
+        </nav>
+        <article>
+            <button class="center" onclick="hideCitiesName()">Hide elements</button>
+            <div class="city">
+                <h2 id="firstTitle">London</h2>
+                <p>London is the capital of England.</p>
+                <button onclick="changeText()">To change name, click me!</button>
+            </div>
+
+            <div class="city">
+                <h2>Paris</h2>
+                <p>Paris is the capital of France.</p>
+            </div>
+
+            <div class="city">
+                <h2>Tokyo</h2>
+                <p>Tokyo is the capital of Japan.</p>
+            </div>
+
+            <!--iframe height="300px" width="100%" src="demo_iframe.htm" name="iframe_a"></!--iframe-->
+
+            <p><a href="https://www.w3schools.com" target="iframe_a">W3Schools.com</a></p>
+            <div class="city">
+                <img id="buldImage" src="https://www.w3schools.com/html/pic_bulboff.gif" alt="Bulb off/on">
+
+                <p>
+                    <button type="button" onclick="changeLight(1)">Turn On</button>
+                    <button type="button" onclick="changeLight(0)">Turn Off</button>
+                </p>
+            </div>
+
+            <div class="city">
+                <table id="customers">
+                    <tr>
+                        <th>Company</th>
+                        <th>Contact</th>
+                        <th>Country</th>
+                    </tr>
+                    <tr>
+                        <td>Alfreds Futterkiste</td>
+                        <td>Maria Anders</td>
+                        <td>Germany</td>
+                    </tr>
+                    <tr>
+                        <td>Berglunds snabbköp</td>
+                        <td>Christina Berglund</td>
+                        <td>Sweden</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="shoppingBorder shopping">
+                <div class="responsive">
+                    <div class="gallery">
+                        <a target="_blank" href="p1.jpg">
+                            <img src="p1.jpg" alt="P1" width="600" height="400">
+                        </a>
+                        <div class="desc">This is the first gun</div>
+                    </div>
+                </div>
+
+                <div class="responsive">
+                    <div class="gallery">
+                        <a target="_blank" href="p2.jpg">
+                            <img src="p2.jpg" alt="P2" width="600" height="400">
+                        </a>
+                        <div class="desc">This is the second gun</div>
+                    </div>
+                </div>
+
+                <div class="responsive">
+                    <div class="gallery">
+                        <a target="_blank" href="p3.jpg">
+                            <img src="p3.jpg" alt="P3" width="600" height="400">
+                        </a>
+                        <div class="desc">This is the third gun</div>
+                    </div>
+                </div>
+
+                <div class="responsive">
+                    <div class="gallery">
+                        <a target="_blank" href="p4.jpg">
+                            <img src="p4.jpg" alt="P4" width="600" height="400">
+                        </a>
+                        <div class="desc">This is the fourth gun</div>
+                    </div>
+                </div>
+
+                <div class="responsive">
+                    <div class="gallery">
+                        <a target="_blank" href="p5.jpg">
+                            <img src="p5.jpg" alt="P5" width="600" height="400">
+                        </a>
+                        <div class="desc">This is the fifth gun</div>
+                    </div>
+                </div>
+
+                <div class="responsive">
+                    <div class="gallery">
+                        <a target="_blank" href="p6.jpg">
+                            <img src="p6.jpg" alt="P6" width="600" height="400">
+                        </a>
+                        <div class="desc">This is the sixth gun</div>
+                    </div>
+                </div>
+
+                <div class="responsive">
+                    <div class="gallery">
+                        <a target="_blank" href="p7.jpg">
+                            <img src="p7.jpg" alt="P7" width="600" height="400">
+                        </a>
+                        <div class="desc">This is the seventh gun</div>
+                    </div>
+                </div>
+
+                <div class="responsive">
+                    <div class="gallery">
+                        <a target="_blank" href="p8.jpg">
+                            <img src="p8.jpg" alt="P8" width="600" height="400">
+                        </a>
+                        <div class="desc">This is the eighth gun</div>
+                    </div>
+                </div>
+
+                <div class="responsive">
+                    <div class="gallery">
+                        <a target="_blank" href="p9.jpg">
+                            <img src="p9.jpg" alt="P9" width="600" height="400">
+                        </a>
+                        <div class="desc">This is the ninth gun</div>
+                    </div>
+                </div>
+
+                <div class="responsive">
+                    <div class="gallery">
+                        <a target="_blank" href="p10.jpg">
+                            <img src="p10.jpg" alt="P10" width="600" height="400">
+                        </a>
+                        <div class="desc">This is the tenth gun</div>
+                    </div>
+                </div>
+
+                <div class="clearfix"></div>
+            </div>
+        </article>
+    </section>
+
+    <footer>This is my first footer</footer>
+</body>
+
+</html>
